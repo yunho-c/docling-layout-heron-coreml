@@ -1,0 +1,104 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 300 × 17)",
+        "shortDescription" : "",
+        "shape" : "[1, 300, 17]",
+        "name" : "logits",
+        "type" : "MultiArray"
+      },
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float16",
+        "formattedType" : "MultiArray (Float16 1 × 300 × 4)",
+        "shortDescription" : "",
+        "shape" : "[1, 300, 4]",
+        "name" : "pred_boxes",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 9,
+    "mlProgramOperationTypeHistogram" : {
+      "Stack" : 2,
+      "Ios18.conv" : 97,
+      "Ios18.mul" : 362,
+      "Ios18.lessEqual" : 72,
+      "Ios18.cast" : 220,
+      "UpsampleNearestNeighbor" : 2,
+      "Ios16.reduceMax" : 1,
+      "Ios18.layerNorm" : 21,
+      "Ios18.log" : 6,
+      "Ios16.reduceSum" : 6,
+      "Ios18.reshape" : 247,
+      "Ios18.concat" : 11,
+      "Ios18.gelu" : 1,
+      "Ios18.add" : 276,
+      "Ios18.realDiv" : 6,
+      "Ios18.greaterEqual" : 72,
+      "Ios18.relu" : 77,
+      "Ios18.maxPool" : 1,
+      "Ios18.clip" : 90,
+      "Ios18.sub" : 120,
+      "Ios18.matmul" : 14,
+      "Ios18.floor" : 36,
+      "Ios18.sigmoid" : 7,
+      "Ios18.expandDims" : 85,
+      "Ios18.linear" : 107,
+      "Ios18.silu" : 24,
+      "Ios18.avgPool" : 3,
+      "Split" : 12,
+      "Ios18.transpose" : 57,
+      "Ios18.gatherAlongAxis" : 74,
+      "Ios18.sliceByIndex" : 50,
+      "Ios18.softmax" : 13,
+      "Ios18.topk" : 1,
+      "Ios18.logicalAnd" : 180,
+      "Tile" : 74
+    },
+    "computePrecision" : "Mixed (Float16, Float32, Int32, UInt16)",
+    "isUpdatable" : "0",
+    "stateSchema" : [
+
+    ],
+    "availability" : {
+      "macOS" : "15.0",
+      "tvOS" : "18.0",
+      "visionOS" : "2.0",
+      "watchOS" : "11.0",
+      "iOS" : "18.0",
+      "macCatalyst" : "18.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_mlProgram"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "8.3.0",
+      "com.github.apple.coremltools.source" : "torch==2.5.0",
+      "com.github.apple.coremltools.source_dialect" : "TorchScript"
+    },
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 3 × 640 × 640)",
+        "shortDescription" : "",
+        "shape" : "[1, 3, 640, 640]",
+        "name" : "pixel_values",
+        "type" : "MultiArray"
+      }
+    ],
+    "generatedClassName" : "layout_heron",
+    "method" : "predict"
+  }
+]

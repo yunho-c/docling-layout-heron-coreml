@@ -1,0 +1,10 @@
+docling-layout-heron-coreml is a Core ML format conversion of
+docling-project/docling-layout-heron:
+
+https://huggingface.co/docling-project/docling-layout-heron
+
+The model weights were not retrained or fine-tuned. The upstream model is
+licensed under the Apache License 2.0. The conversion scripts and accompanying
+documentation in this repository are also provided under Apache-2.0.
+
+Docling and the original model are works of their respective contributors.
