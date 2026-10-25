@@ -1,0 +1,261 @@
+{
+  "ground_truth_counts": {
+    "embedded": 104,
+    "isolated": 33
+  },
+  "page_count": 10,
+  "metrics": {
+    "isolated": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 12,
+        "fp": 20,
+        "fn": 21,
+        "precision": 0.375,
+        "recall": 0.36363636363636365,
+        "f1": 0.3692307692307692,
+        "matched_mean_iou": 0.5996294890350623
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 15,
+          "fp": 32,
+          "fn": 18,
+          "precision": 0.3191489361702128,
+          "recall": 0.45454545454545453,
+          "f1": 0.375,
+          "matched_mean_iou": 0.6217454437137556
+        },
+        "0.3": {
+          "tp": 12,
+          "fp": 20,
+          "fn": 21,
+          "precision": 0.375,
+          "recall": 0.36363636363636365,
+          "f1": 0.3692307692307692,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.5": {
+          "tp": 12,
+          "fp": 18,
+          "fn": 21,
+          "precision": 0.4,
+          "recall": 0.36363636363636365,
+          "f1": 0.380952380952381,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.7": {
+          "tp": 12,
+          "fp": 16,
+          "fn": 21,
+          "precision": 0.42857142857142855,
+          "recall": 0.36363636363636365,
+          "f1": 0.3934426229508197,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.9": {
+          "tp": 4,
+          "fp": 4,
+          "fn": 29,
+          "precision": 0.5,
+          "recall": 0.12121212121212122,
+          "f1": 0.1951219512195122,
+          "matched_mean_iou": 0.6404866996883176
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.06716665174512466,
+        "ap50": 0.28592080964040617,
+        "ap75": 0.028100400949185825,
+        "ar_100": 0.3484848484848485,
+        "max_detections_per_page": 100
+      }
+    },
+    "embedded": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 0,
+        "fp": 32,
+        "fn": 104,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "matched_mean_iou": null
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 0,
+          "fp": 47,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.3": {
+          "tp": 0,
+          "fp": 32,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.5": {
+          "tp": 0,
+          "fp": 30,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.7": {
+          "tp": 0,
+          "fp": 28,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.9": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.0,
+        "ap50": 0.0,
+        "ap75": 0.0,
+        "ar_100": 0.0,
+        "max_detections_per_page": 100
+      }
+    },
+    "all": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 12,
+        "fp": 20,
+        "fn": 125,
+        "precision": 0.375,
+        "recall": 0.08759124087591241,
+        "f1": 0.14201183431952663,
+        "matched_mean_iou": 0.5996294890350623
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 15,
+          "fp": 32,
+          "fn": 122,
+          "precision": 0.3191489361702128,
+          "recall": 0.10948905109489052,
+          "f1": 0.16304347826086957,
+          "matched_mean_iou": 0.6217454437137556
+        },
+        "0.3": {
+          "tp": 12,
+          "fp": 20,
+          "fn": 125,
+          "precision": 0.375,
+          "recall": 0.08759124087591241,
+          "f1": 0.14201183431952663,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.5": {
+          "tp": 12,
+          "fp": 18,
+          "fn": 125,
+          "precision": 0.4,
+          "recall": 0.08759124087591241,
+          "f1": 0.1437125748502994,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.7": {
+          "tp": 12,
+          "fp": 16,
+          "fn": 125,
+          "precision": 0.42857142857142855,
+          "recall": 0.08759124087591241,
+          "f1": 0.14545454545454548,
+          "matched_mean_iou": 0.5996294890350623
+        },
+        "0.9": {
+          "tp": 4,
+          "fp": 4,
+          "fn": 133,
+          "precision": 0.5,
+          "recall": 0.029197080291970802,
+          "f1": 0.05517241379310345,
+          "matched_mean_iou": 0.6404866996883176
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.016696703504330206,
+        "ap50": 0.0699405150275031,
+        "ap75": 0.007304094045768213,
+        "ar_100": 0.08394160583941607,
+        "max_detections_per_page": 100
+      }
+    }
+  },
+  "compute_units": "cpu-ne",
+  "chip": "Apple M4 Pro",
+  "compute_plan_counts": {
+    "ANE": 1052,
+    "CPU": 1375
+  },
+  "timing": {
+    "median_ms": 71.07202083716402,
+    "p95_ms": 72.70376250671688,
+    "min_ms": 69.55791666405275,
+    "max_ms": 75.98154166771565,
+    "count": 50,
+    "boundary": "Synchronous MLModel.prediction call only, 3 warmups then 5 repeats per page; excludes preprocessing, tensor construction, postprocessing and file IO.",
+    "warmup_ms": [
+      97.62654166843276,
+      73.66695834207349,
+      71.14583333896007
+    ],
+    "model_load_ms_after_plan": 5600.444166673697
+  },
+  "coverage_diagnostic": {
+    "definition": "At score > 0.30, fraction of each GT box covered by its best-overlapping formula prediction. Many-to-one, no penalty for oversized boxes; not precision/recall or detection accuracy.",
+    "isolated": {
+      "0.5": {
+        "covered": 32,
+        "total": 33,
+        "fraction": 0.9696969696969697
+      },
+      "0.8": {
+        "covered": 24,
+        "total": 33,
+        "fraction": 0.7272727272727273
+      },
+      "0.9": {
+        "covered": 14,
+        "total": 33,
+        "fraction": 0.42424242424242425
+      }
+    },
+    "embedded": {
+      "0.5": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      },
+      "0.8": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      },
+      "0.9": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "ground_truth_counts": {
+    "embedded": 104,
+    "isolated": 33
+  },
+  "page_count": 10,
+  "metrics": {
+    "isolated": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 15,
+        "fp": 20,
+        "fn": 18,
+        "precision": 0.42857142857142855,
+        "recall": 0.45454545454545453,
+        "f1": 0.4411764705882353,
+        "matched_mean_iou": 0.6564692295142608
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 27,
+          "fp": 54,
+          "fn": 6,
+          "precision": 0.3333333333333333,
+          "recall": 0.8181818181818182,
+          "f1": 0.4736842105263157,
+          "matched_mean_iou": 0.7013461479546371
+        },
+        "0.3": {
+          "tp": 15,
+          "fp": 20,
+          "fn": 18,
+          "precision": 0.42857142857142855,
+          "recall": 0.45454545454545453,
+          "f1": 0.4411764705882353,
+          "matched_mean_iou": 0.6564692295142608
+        },
+        "0.5": {
+          "tp": 13,
+          "fp": 18,
+          "fn": 20,
+          "precision": 0.41935483870967744,
+          "recall": 0.3939393939393939,
+          "f1": 0.40625,
+          "matched_mean_iou": 0.645097425676666
+        },
+        "0.7": {
+          "tp": 12,
+          "fp": 17,
+          "fn": 21,
+          "precision": 0.41379310344827586,
+          "recall": 0.36363636363636365,
+          "f1": 0.3870967741935484,
+          "matched_mean_iou": 0.6225781966578777
+        },
+        "0.9": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 28,
+          "precision": 0.625,
+          "recall": 0.15151515151515152,
+          "f1": 0.24390243902439024,
+          "matched_mean_iou": 0.6102715950053561
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.15932106489290565,
+        "ap50": 0.43557962895884506,
+        "ap75": 0.08114425429571612,
+        "ar_100": 0.5484848484848486,
+        "max_detections_per_page": 100
+      }
+    },
+    "embedded": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 0,
+        "fp": 35,
+        "fn": 104,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "matched_mean_iou": null
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 0,
+          "fp": 81,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.3": {
+          "tp": 0,
+          "fp": 35,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.5": {
+          "tp": 0,
+          "fp": 31,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.7": {
+          "tp": 0,
+          "fp": 29,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.9": {
+          "tp": 0,
+          "fp": 8,
+          "fn": 104,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.0,
+        "ap50": 0.0,
+        "ap75": 0.0,
+        "ar_100": 0.0,
+        "max_detections_per_page": 100
+      }
+    },
+    "all": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 15,
+        "fp": 20,
+        "fn": 122,
+        "precision": 0.42857142857142855,
+        "recall": 0.10948905109489052,
+        "f1": 0.17441860465116277,
+        "matched_mean_iou": 0.6564692295142608
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 27,
+          "fp": 54,
+          "fn": 110,
+          "precision": 0.3333333333333333,
+          "recall": 0.19708029197080293,
+          "f1": 0.24770642201834864,
+          "matched_mean_iou": 0.7013461479546371
+        },
+        "0.3": {
+          "tp": 15,
+          "fp": 20,
+          "fn": 122,
+          "precision": 0.42857142857142855,
+          "recall": 0.10948905109489052,
+          "f1": 0.17441860465116277,
+          "matched_mean_iou": 0.6564692295142608
+        },
+        "0.5": {
+          "tp": 13,
+          "fp": 18,
+          "fn": 124,
+          "precision": 0.41935483870967744,
+          "recall": 0.0948905109489051,
+          "f1": 0.15476190476190474,
+          "matched_mean_iou": 0.645097425676666
+        },
+        "0.7": {
+          "tp": 12,
+          "fp": 17,
+          "fn": 125,
+          "precision": 0.41379310344827586,
+          "recall": 0.08759124087591241,
+          "f1": 0.14457831325301204,
+          "matched_mean_iou": 0.6225781966578777
+        },
+        "0.9": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 132,
+          "precision": 0.625,
+          "recall": 0.0364963503649635,
+          "f1": 0.06896551724137931,
+          "matched_mean_iou": 0.6102715950053561
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.03920577061223733,
+        "ap50": 0.1076113690392432,
+        "ap75": 0.02020448590369927,
+        "ar_100": 0.1321167883211679,
+        "max_detections_per_page": 100
+      }
+    }
+  },
+  "compute_units": "cpu",
+  "chip": "Apple M4 Pro",
+  "compute_plan_counts": {
+    "CPU": 2427
+  },
+  "timing": {
+    "median_ms": 89.84045833494747,
+    "p95_ms": 94.7132812529162,
+    "min_ms": 87.16999999887776,
+    "max_ms": 117.81329166842625,
+    "count": 50,
+    "boundary": "Synchronous MLModel.prediction call only, 3 warmups then 5 repeats per page; excludes preprocessing, tensor construction, postprocessing and file IO.",
+    "warmup_ms": [
+      110.84883332659956,
+      88.74066665885039,
+      91.13083333068062
+    ],
+    "model_load_ms_after_plan": 873.2418750005309
+  },
+  "coverage_diagnostic": {
+    "definition": "At score > 0.30, fraction of each GT box covered by its best-overlapping formula prediction. Many-to-one, no penalty for oversized boxes; not precision/recall or detection accuracy.",
+    "isolated": {
+      "0.5": {
+        "covered": 33,
+        "total": 33,
+        "fraction": 1.0
+      },
+      "0.8": {
+        "covered": 33,
+        "total": 33,
+        "fraction": 1.0
+      },
+      "0.9": {
+        "covered": 13,
+        "total": 33,
+        "fraction": 0.3939393939393939
+      }
+    },
+    "embedded": {
+      "0.5": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      },
+      "0.8": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      },
+      "0.9": {
+        "covered": 0,
+        "total": 104,
+        "fraction": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "ground_truth_counts": {
+    "embedded": 715,
+    "isolated": 96
+  },
+  "page_count": 50,
+  "metrics": {
+    "isolated": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 44,
+        "fp": 53,
+        "fn": 52,
+        "precision": 0.4536082474226804,
+        "recall": 0.4583333333333333,
+        "f1": 0.4559585492227979,
+        "matched_mean_iou": 0.6853415067181812
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 50,
+          "fp": 117,
+          "fn": 46,
+          "precision": 0.2994011976047904,
+          "recall": 0.5208333333333334,
+          "f1": 0.3802281368821292,
+          "matched_mean_iou": 0.6915753168020906
+        },
+        "0.3": {
+          "tp": 44,
+          "fp": 53,
+          "fn": 52,
+          "precision": 0.4536082474226804,
+          "recall": 0.4583333333333333,
+          "f1": 0.4559585492227979,
+          "matched_mean_iou": 0.6853415067181812
+        },
+        "0.5": {
+          "tp": 44,
+          "fp": 47,
+          "fn": 52,
+          "precision": 0.4835164835164835,
+          "recall": 0.4583333333333333,
+          "f1": 0.47058823529411764,
+          "matched_mean_iou": 0.6853415067181812
+        },
+        "0.7": {
+          "tp": 42,
+          "fp": 40,
+          "fn": 54,
+          "precision": 0.5121951219512195,
+          "recall": 0.4375,
+          "f1": 0.47191011235955055,
+          "matched_mean_iou": 0.6893402086646115
+        },
+        "0.9": {
+          "tp": 19,
+          "fp": 17,
+          "fn": 77,
+          "precision": 0.5277777777777778,
+          "recall": 0.19791666666666666,
+          "f1": 0.2878787878787879,
+          "matched_mean_iou": 0.7232745984373082
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.10944009399304003,
+        "ap50": 0.3411889646251916,
+        "ap75": 0.05190292155301804,
+        "ar_100": 0.36249999999999993,
+        "max_detections_per_page": 100
+      }
+    },
+    "embedded": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 0,
+        "fp": 97,
+        "fn": 715,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "matched_mean_iou": null
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 1,
+          "fp": 166,
+          "fn": 714,
+          "precision": 0.005988023952095809,
+          "recall": 0.0013986013986013986,
+          "f1": 0.0022675736961451248,
+          "matched_mean_iou": 0.5550607634613859
+        },
+        "0.3": {
+          "tp": 0,
+          "fp": 97,
+          "fn": 715,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.5": {
+          "tp": 0,
+          "fp": 91,
+          "fn": 715,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.7": {
+          "tp": 0,
+          "fp": 82,
+          "fn": 715,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        },
+        "0.9": {
+          "tp": 0,
+          "fp": 36,
+          "fn": 715,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0,
+          "matched_mean_iou": null
+        }
+      },
+      "coco": {
+        "ap_50_95": 1.62311313098523e-05,
+        "ap50": 8.115565654926148e-05,
+        "ap75": 0.0,
+        "ar_100": 0.0008391608391608392,
+        "max_detections_per_page": 100
+      }
+    },
+    "all": {
+      "at_score_0.3_iou_0.5": {
+        "tp": 44,
+        "fp": 53,
+        "fn": 767,
+        "precision": 0.4536082474226804,
+        "recall": 0.05425400739827373,
+        "f1": 0.09691629955947136,
+        "matched_mean_iou": 0.6853415067181812
+      },
+      "score_sweep_iou_0.5": {
+        "0.1": {
+          "tp": 51,
+          "fp": 116,
+          "fn": 760,
+          "precision": 0.30538922155688625,
+          "recall": 0.06288532675709001,
+          "f1": 0.10429447852760736,
+          "matched_mean_iou": 0.6888985608542336
+        },
+        "0.3": {
+          "tp": 44,
+          "fp": 53,
+          "fn": 767,
+          "precision": 0.4536082474226804,
+          "recall": 0.05425400739827373,
+          "f1": 0.09691629955947136,
+          "matched_mean_iou": 0.6853415067181812
+        },
+        "0.5": {
+          "tp": 44,
+          "fp": 47,
+          "fn": 767,
+          "precision": 0.4835164835164835,
+          "recall": 0.05425400739827373,
+          "f1": 0.09756097560975609,
+          "matched_mean_iou": 0.6853415067181812
+        },
+        "0.7": {
+          "tp": 42,
+          "fp": 40,
+          "fn": 769,
+          "precision": 0.5121951219512195,
+          "recall": 0.051787916152897656,
+          "f1": 0.0940649496080627,
+          "matched_mean_iou": 0.6893402086646115
+        },
+        "0.9": {
+          "tp": 19,
+          "fp": 17,
+          "fn": 792,
+          "precision": 0.5277777777777778,
+          "recall": 0.02342786683107275,
+          "f1": 0.0448642266824085,
+          "matched_mean_iou": 0.7232745984373082
+        }
+      },
+      "coco": {
+        "ap_50_95": 0.014687393769367323,
+        "ap50": 0.044751481880516815,
+        "ap75": 0.007270442295194771,
+        "ar_100": 0.0436498150431566,
+        "max_detections_per_page": 100
+      }
+    }
+  },
+  "compute_units": "cpu-ne",
+  "chip": "Apple M4 Pro",
+  "compute_plan_counts": {
+    "ANE": 1052,
+    "CPU": 1375
+  },
+  "timing": {
+    "median_ms": 70.75827082735486,
+    "p95_ms": 82.51836666677264,
+    "min_ms": 69.18904166377615,
+    "max_ms": 83.27100001042709,
+    "count": 250,
+    "boundary": "Synchronous MLModel.prediction call only, 3 warmups then 5 repeats per page; excludes preprocessing, tensor construction, postprocessing and file IO.",
+    "warmup_ms": [
+      83.17695833102334,
+      70.04983334627468,
+      69.89379166043364
+    ],
+    "model_load_ms_after_plan": 5453.727875006734
+  },
+  "coverage_diagnostic": {
+    "definition": "At score > 0.30, fraction of each GT box covered by its best-overlapping formula prediction. Many-to-one, no penalty for oversized boxes; not precision/recall or detection accuracy.",
+    "isolated": {
+      "0.5": {
+        "covered": 91,
+        "total": 96,
+        "fraction": 0.9479166666666666
+      },
+      "0.8": {
+        "covered": 66,
+        "total": 96,
+        "fraction": 0.6875
+      },
+      "0.9": {
+        "covered": 38,
+        "total": 96,
+        "fraction": 0.3958333333333333
+      }
+    },
+    "embedded": {
+      "0.5": {
+        "covered": 2,
+        "total": 715,
+        "fraction": 0.002797202797202797
+      },
+      "0.8": {
+        "covered": 2,
+        "total": 715,
+        "fraction": 0.002797202797202797
+      },
+      "0.9": {
+        "covered": 2,
+        "total": 715,
+        "fraction": 0.002797202797202797
+      }
+    }
+  }
+}

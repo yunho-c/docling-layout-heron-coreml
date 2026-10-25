@@ -1,0 +1,126 @@
+[
+  {
+    "name": "Heron",
+    "metrics": {
+      "tp": 44,
+      "fp": 53,
+      "fn": 767,
+      "precision": 0.4536082474226804,
+      "recall": 0.05425400739827373,
+      "f1": 0.09691629955947136,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 0,
+          "total": 715,
+          "recall": 0.0
+        },
+        "isolated": {
+          "matched": 44,
+          "total": 96,
+          "recall": 0.4583333333333333
+        }
+      },
+      "matched_mean_iou": 0.6853415067181812
+    },
+    "coco_all_math": {
+      "ap_50_95": 0.014687393769367323,
+      "ap50": 0.044751481880516815,
+      "ap75": 0.007270442295194771,
+      "ar_100": 0.0436498150431566,
+      "max_detections_per_page": 100
+    }
+  },
+  {
+    "name": "PP-DocLayoutV2",
+    "metrics": {
+      "tp": 571,
+      "fp": 129,
+      "fn": 240,
+      "precision": 0.8157142857142857,
+      "recall": 0.7040690505548706,
+      "f1": 0.7557908669755128,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 475,
+          "total": 715,
+          "recall": 0.6643356643356644
+        },
+        "isolated": {
+          "matched": 96,
+          "total": 96,
+          "recall": 1.0
+        }
+      },
+      "matched_mean_iou": 0.7350708441260401
+    },
+    "coco_all_math": {
+      "ap_50_95": 0.34711719837753735,
+      "ap50": 0.7415926442169622,
+      "ap75": 0.21022432069617394,
+      "ar_100": 0.4018495684340321,
+      "max_detections_per_page": 100
+    }
+  },
+  {
+    "name": "PP-DocLayout_plus-L",
+    "metrics": {
+      "tp": 549,
+      "fp": 100,
+      "fn": 262,
+      "precision": 0.8459167950693375,
+      "recall": 0.6769420468557337,
+      "f1": 0.7520547945205479,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 456,
+          "total": 715,
+          "recall": 0.6377622377622377
+        },
+        "isolated": {
+          "matched": 93,
+          "total": 96,
+          "recall": 0.96875
+        }
+      },
+      "matched_mean_iou": 0.7221324498969577
+    },
+    "coco_all_math": {
+      "ap_50_95": 0.3271772404175247,
+      "ap50": 0.7612483850149271,
+      "ap75": 0.16142107946604928,
+      "ar_100": 0.388039457459926,
+      "max_detections_per_page": 100
+    }
+  },
+  {
+    "name": "PP-DocLayoutV3",
+    "metrics": {
+      "tp": 485,
+      "fp": 45,
+      "fn": 326,
+      "precision": 0.9150943396226415,
+      "recall": 0.5980271270036991,
+      "f1": 0.7233407904548843,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 392,
+          "total": 715,
+          "recall": 0.5482517482517483
+        },
+        "isolated": {
+          "matched": 93,
+          "total": 96,
+          "recall": 0.96875
+        }
+      },
+      "matched_mean_iou": 0.7654372530499536
+    },
+    "coco_all_math": {
+      "ap_50_95": 0.3693343874275803,
+      "ap50": 0.7361492722059889,
+      "ap75": 0.29722366263214445,
+      "ar_100": 0.4241676942046856,
+      "max_detections_per_page": 100
+    }
+  }
+]

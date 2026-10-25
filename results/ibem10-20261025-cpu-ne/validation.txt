@@ -1,0 +1,9 @@
+Model SHA256SUMS: all 8 files passed.
+Original sample JPEG hashes and dimensions: all 10 passed.
+Output shape/finite validation: all 10 passed.
+Postprocessing parity against installed Hugging Face RTDetrImageProcessor: all predictions above 0.30 on all 10 primary pages passed at atol=1e-7.
+IoU geometry and duplicate one-to-one matching checks passed.
+PNG decoding/dimensions: 20/20 passed.
+Browser checks: all 10 pages, layout/math/original modes, displayed/inline/label toggles, confidence slider, zoom, keyboard navigation, image-load failure recovery, reduced motion, mobile layout, and PNG download.
+Initial browser test found mobile overflow; corrected before final screenshot and recheck.
+No runtime ANE hardware trace or upstream-model inference comparison was collected.

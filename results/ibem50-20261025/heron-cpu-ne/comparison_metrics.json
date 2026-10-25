@@ -1,0 +1,419 @@
+{
+  "key": "heron-cpu-ne",
+  "name": "Heron",
+  "backend": "Core ML FP16 · CPU + ANE · 640²",
+  "metrics": {
+    "tp": 44,
+    "fp": 53,
+    "fn": 767,
+    "precision": 0.4536082474226804,
+    "recall": 0.05425400739827373,
+    "f1": 0.09691629955947136,
+    "recall_by_type": {
+      "embedded": {
+        "matched": 0,
+        "total": 715,
+        "recall": 0.0
+      },
+      "isolated": {
+        "matched": 44,
+        "total": 96,
+        "recall": 0.4583333333333333
+      }
+    },
+    "matched_mean_iou": 0.6853415067181812
+  },
+  "threshold_sweep": {
+    "0.1": {
+      "tp": 51,
+      "fp": 116,
+      "fn": 760,
+      "precision": 0.30538922155688625,
+      "recall": 0.06288532675709001,
+      "f1": 0.10429447852760736,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 1,
+          "total": 715,
+          "recall": 0.0013986013986013986
+        },
+        "isolated": {
+          "matched": 50,
+          "total": 96,
+          "recall": 0.5208333333333334
+        }
+      },
+      "matched_mean_iou": 0.6888985608542336
+    },
+    "0.3": {
+      "tp": 44,
+      "fp": 53,
+      "fn": 767,
+      "precision": 0.4536082474226804,
+      "recall": 0.05425400739827373,
+      "f1": 0.09691629955947136,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 0,
+          "total": 715,
+          "recall": 0.0
+        },
+        "isolated": {
+          "matched": 44,
+          "total": 96,
+          "recall": 0.4583333333333333
+        }
+      },
+      "matched_mean_iou": 0.6853415067181812
+    },
+    "0.5": {
+      "tp": 44,
+      "fp": 47,
+      "fn": 767,
+      "precision": 0.4835164835164835,
+      "recall": 0.05425400739827373,
+      "f1": 0.09756097560975609,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 0,
+          "total": 715,
+          "recall": 0.0
+        },
+        "isolated": {
+          "matched": 44,
+          "total": 96,
+          "recall": 0.4583333333333333
+        }
+      },
+      "matched_mean_iou": 0.6853415067181812
+    },
+    "0.7": {
+      "tp": 42,
+      "fp": 40,
+      "fn": 769,
+      "precision": 0.5121951219512195,
+      "recall": 0.051787916152897656,
+      "f1": 0.0940649496080627,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 0,
+          "total": 715,
+          "recall": 0.0
+        },
+        "isolated": {
+          "matched": 42,
+          "total": 96,
+          "recall": 0.4375
+        }
+      },
+      "matched_mean_iou": 0.6893402086646115
+    },
+    "0.9": {
+      "tp": 19,
+      "fp": 17,
+      "fn": 792,
+      "precision": 0.5277777777777778,
+      "recall": 0.02342786683107275,
+      "f1": 0.0448642266824085,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 0,
+          "total": 715,
+          "recall": 0.0
+        },
+        "isolated": {
+          "matched": 19,
+          "total": 96,
+          "recall": 0.19791666666666666
+        }
+      },
+      "matched_mean_iou": 0.7232745984373082
+    }
+  },
+  "coco_all_math": {
+    "ap_50_95": 0.014687393769367323,
+    "ap50": 0.044751481880516815,
+    "ap75": 0.007270442295194771,
+    "ar_100": 0.0436498150431566,
+    "max_detections_per_page": 100
+  },
+  "coverage80": {
+    "embedded": {
+      "covered": 2,
+      "total": 715,
+      "fraction": 0.002797202797202797
+    },
+    "isolated": {
+      "covered": 66,
+      "total": 96,
+      "fraction": 0.6875
+    }
+  },
+  "diagnostic_median_forward_ms": 70.29606249852804,
+  "provenance": {
+    "dataset": {
+      "dataset": "deepcopy/IBEM-v1-math-detection",
+      "dataset_url": "https://huggingface.co/datasets/deepcopy/IBEM-v1-math-detection",
+      "revision": "4f82284a793f020a9235efe26dbd6ed5d733a022",
+      "split": "test",
+      "source_shard": "data/test-00000-of-00002-012842bff90d1079.parquet",
+      "selection": "First page encountered from each of the first 50 distinct documents in the first test shard. Preserves the initial ten samples and adds forty distinct documents. Deterministic convenience sample, not a random sample.",
+      "count": 50,
+      "image_encoding": "Original embedded image bytes, copied without resizing or re-encoding.",
+      "annotations": "annotations.json; each record contains expressions as a list of objects, transposed from the source column lists. Bounding-box coordinates are normalized fractions of image dimensions.",
+      "license": "CC BY 4.0, according to the dataset card",
+      "original_dataset": "https://doi.org/10.5281/zenodo.7963703",
+      "source_card": "DATASET_CARD.md",
+      "downloaded_at_utc": "2026-10-25T22:50:27.397490+00:00",
+      "parquet_range_payload_bytes": 137693802,
+      "image_bytes": 17786598,
+      "images": [
+        {
+          "file": "0001074_page02.jpg",
+          "sha256": "01e0768b593731c22d5cbc726560ef2a223aa0026b3c0b4505d9471c9d183ccc"
+        },
+        {
+          "file": "0001125_page03.jpg",
+          "sha256": "2381ee8cd7924921ce4fed892a22bcd226e12b93eb84efd269978257e1f28a0c"
+        },
+        {
+          "file": "0001133_page03.jpg",
+          "sha256": "1ea667a10dd6af6a7d29ae1e8ca6c6f90ce5af761c0730d8f493cd56bb57bd43"
+        },
+        {
+          "file": "0001178_page04.jpg",
+          "sha256": "741c09de6351643d40779ae42408c8cfa98306b821c0a8123a29a981b3efb3ee"
+        },
+        {
+          "file": "0002018_page04.jpg",
+          "sha256": "a762abbc1a0a863a5812c33db3a4b7f70c9c407e5d7b9cf706fee93ba204839b"
+        },
+        {
+          "file": "0002177_page01.jpg",
+          "sha256": "dce4972dee7a39eb2ca0d8c4efd849d178084d2e21f552d5efe1455adc0fc2cf"
+        },
+        {
+          "file": "0003055_page01.jpg",
+          "sha256": "d5243d5e180052fcc787c6cb86bcf72f8e1f65dc33c4a5068059627d03a25e38"
+        },
+        {
+          "file": "0003079_page01.jpg",
+          "sha256": "a8e2157412e7564d8a2f405bad4b258a2ef039c7d93b6020022e16e181c25608"
+        },
+        {
+          "file": "0003126_page03.jpg",
+          "sha256": "cd4514aec56e24513f5343193e5516dbcb12c646e6477cef088d7d17eb288735"
+        },
+        {
+          "file": "0003226_page01.jpg",
+          "sha256": "b3d3e1f05bf7dac2876e6b9fcbfe1c44dee6e0f61dfaddca82eac1d72861c4c5"
+        },
+        {
+          "file": "0003239_page01.jpg",
+          "sha256": "fe697d0338e36772bf046e8f678593aac2e2dbeb1b66a1ad69c14796dcb68b2c"
+        },
+        {
+          "file": "0004120_page05.jpg",
+          "sha256": "c98657cec2edff73c864febcb6c7ddbb2e52ee8839730d7bda4688823178958b"
+        },
+        {
+          "file": "0005070_page01.jpg",
+          "sha256": "3bbf41e761c843e8126635a2a360b6303e30bdba4012bbb1776d8a131d07dbd8"
+        },
+        {
+          "file": "0005144_page01.jpg",
+          "sha256": "3f74a682c7a24d38aa86660586b5250899874bb2a5cf8c58eeef13fdd716c3ea"
+        },
+        {
+          "file": "0005174_page03.jpg",
+          "sha256": "922212538d1f45eaede06f83157a9239c0faaf4936c90d9297482097418099ea"
+        },
+        {
+          "file": "0005219_page07.jpg",
+          "sha256": "75a9f6ddaa041f3ee922d9d5211cd8fe6c3e988d8d6c644e97e912b3f0b57e29"
+        },
+        {
+          "file": "0005222_page01.jpg",
+          "sha256": "de610b0ee52832334d5c8fd7f78869f610d3a2df94f66418d03b6a2d7df00884"
+        },
+        {
+          "file": "0006023_page01.jpg",
+          "sha256": "587b08f1ea9b5632b5eb93f74a64c147c203688ef1f8915868e636bff1e231dd"
+        },
+        {
+          "file": "0006050_page08.jpg",
+          "sha256": "cd934029a7539443b5ba4aba575943fa405a7cae938279c040c341c2a39cdeb3"
+        },
+        {
+          "file": "0006105_page02.jpg",
+          "sha256": "cafe2f0b9c355d44c5f1f9ba1a38efdd8ee5f7d203f093278799e0c22e1347ac"
+        },
+        {
+          "file": "0006108_page05.jpg",
+          "sha256": "3817e7192588cb95aa3ec55de88bc703f9452aaf9e6628a32b45e4a787af1d50"
+        },
+        {
+          "file": "0006145_page05.jpg",
+          "sha256": "514a0f3613f9dc0e28e63392021f8abac212b427321e5848ab16b1b5f5e22f4b"
+        },
+        {
+          "file": "0006171_page01.jpg",
+          "sha256": "a851f97c3661249303ad8175dcf38bed5d71333014aa4534cb12a2b9d492cc46"
+        },
+        {
+          "file": "0006216_page06.jpg",
+          "sha256": "4aa1f802c287654626f67b56e828d9c466f4efd1f5b42b9daa508114b2f77127"
+        },
+        {
+          "file": "0006246_page04.jpg",
+          "sha256": "50b726d838b0f6808ce1a9610245645fe8ee3152a5b2ae45fab9d9856dd0c836"
+        },
+        {
+          "file": "0007096_page02.jpg",
+          "sha256": "4788422428a6a4436dd883d887333de47fae6d32c1a00610bebab868165c14d6"
+        },
+        {
+          "file": "0008087_page03.jpg",
+          "sha256": "1ec906a3c3f02354ac078f6fa86ddc0a3bf180b86e5910df204939b8c5fa7c51"
+        },
+        {
+          "file": "0008181_page04.jpg",
+          "sha256": "190df74d31f6bb4cb9acb4d5765e5039e1bb3023d8e468947fabe4eb6d5faaed"
+        },
+        {
+          "file": "0009027_page01.jpg",
+          "sha256": "79eb7af3ea29b16939aa207b76f530765bbb7d9490624182d9baa722b8589cc4"
+        },
+        {
+          "file": "0009084_page01.jpg",
+          "sha256": "2c7cdcb9044a7ba07ddebc675b0222f0c1d31471ce85b660bba50e5ceee730a6"
+        },
+        {
+          "file": "0009120_page01.jpg",
+          "sha256": "1c47eabeba62870e6a2e0017b116664161fc75ee9ffbc8b0aa7c76868f225834"
+        },
+        {
+          "file": "0009153_page01.jpg",
+          "sha256": "269efeaf547cea92cabac8b553b2a1e794aec9de868406b23e63be7c9370e41b"
+        },
+        {
+          "file": "0009154_page01.jpg",
+          "sha256": "5178f5ec078eed060248d51d01e4d6e01d2b4ffc3df209a609dd1a52757b9a97"
+        },
+        {
+          "file": "0009239_page02.jpg",
+          "sha256": "7f0948be74dfbd7f4e0c2b2d7cdd121b9d67c055516147ad6073c8a5208bd551"
+        },
+        {
+          "file": "0010166_page01.jpg",
+          "sha256": "f9372d4bc0c3c9312eed3fa48fc2f3e5dcd9428d6669e5bbe43705a94fe43d17"
+        },
+        {
+          "file": "0010212_page02.jpg",
+          "sha256": "210df642a3c295ac9fad418849b584e68ad94410a63358986d054f693557c71a"
+        },
+        {
+          "file": "0010268_page01.jpg",
+          "sha256": "9c8070eacf4c8ac79ee38825fb486b59ef76fbf9f830659f096e0781ae54cca6"
+        },
+        {
+          "file": "0011020_page02.jpg",
+          "sha256": "d12198849030774659db8e655216b58b9d42ff3d8f703d1d701c84687a914035"
+        },
+        {
+          "file": "0011042_page04.jpg",
+          "sha256": "dad97c7f58d8bdcb628012c0a46310169a7a9cadecfeb092ef7ae31558871ad5"
+        },
+        {
+          "file": "0011057_page02.jpg",
+          "sha256": "86833f7796cb669904729350bc7af2e92eec911c3f99f9248404219c404a0b9b"
+        },
+        {
+          "file": "0011078_page02.jpg",
+          "sha256": "a84680392b060d907b1aa305a53f3597d666ad70e56f21833929064ebf1dc3ff"
+        },
+        {
+          "file": "0011145_page01.jpg",
+          "sha256": "9ea2a5df08fa81131af20867275e1f0e87e7091cd70fbd9bf249fd72ec24cb27"
+        },
+        {
+          "file": "0011184_page02.jpg",
+          "sha256": "1f8fbb9acd22a48242021526b91715acca25f4b75d2c03f6d2adc0a39a559aee"
+        },
+        {
+          "file": "0012001_page01.jpg",
+          "sha256": "c79542e992145a10f6671a837eb677317c200bac8f072a8ca3a9eca32e7d746b"
+        },
+        {
+          "file": "0012005_page01.jpg",
+          "sha256": "4df975c47b4d051c46e516c1955fe664559a4366b03781bbab5b4a9d0e594750"
+        },
+        {
+          "file": "0012032_page01.jpg",
+          "sha256": "b3dafa0155768188a928afc60c1c2d665088a91cd5f62908d403e8d398a1f8be"
+        },
+        {
+          "file": "0012040_page02.jpg",
+          "sha256": "1b93d7090e2546d949363b2d22dc651f449601131af6553258c9c9535dfdc408"
+        },
+        {
+          "file": "0012069_page01.jpg",
+          "sha256": "0677cc221f41e804f01622e19ef884550cc20c72f49dd38abe030f90363795a4"
+        },
+        {
+          "file": "0012090_page01.jpg",
+          "sha256": "6f20d05d4e73070759e2489c241476dad451c51ad543cf90cb2be2f375f74bfc"
+        },
+        {
+          "file": "0012145_page01.jpg",
+          "sha256": "04b8f5c5f153ccb316b4646ee69979047a18ff78a05f6c63effe65a4f984a55a"
+        }
+      ],
+      "updated_at_utc": "2026-10-25T23:26:40.221703+00:00",
+      "download_batches": [
+        {
+          "downloaded_at_utc": "2026-10-25T22:50:27.397490+00:00",
+          "sample_count": 10,
+          "parquet_range_payload_bytes": 29622272
+        },
+        {
+          "downloaded_at_utc": "2026-10-25T23:26:40.221703+00:00",
+          "sample_count": 40,
+          "parquet_range_payload_bytes": 108071530,
+          "row_groups": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    "dataset_directory": "/Users/yunhocho/GitHub/IBEM-v1-math-detection-sample",
+    "annotations_sha256": "9008e0533d272adaba663e8407750fa86649b032d2fc78a6110107e0ed122e18",
+    "git_head": "3d4f06aa152a72b05f8d47f4d29e2906eb47aa80",
+    "python": "3.13.16 (main, Sep 30 2026, 18:57:20) [Clang 21.0.0 (clang-2100.3.34.2)]",
+    "numpy": "2.3.5",
+    "pillow": "10.4.0",
+    "macos": "27.0.1",
+    "chip": "Apple M4 Pro",
+    "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=23003235)\t79%; charging; 1:46 remaining present: true",
+    "files_sha256": {
+      "layout_heron.mlmodelc/metadata.json": "146f86c84f1694ca5a42e439ddc0d110509c7094f9960f1f7eb6b713a73cfaa4",
+      "layout_heron.mlmodelc/model.mil": "b8db7773c6859798734fe9d420a7c3af86d7aca5308c2f59a09689419d2f2d2b",
+      "layout_heron.mlmodelc/coremldata.bin": "a2d9414ac6582e4711465eb1ab6c58dc10b3d0d62586a729f6601f97457973f4",
+      "layout_heron.mlmodelc/weights/weight.bin": "37dccfd721a45363bb10c208593dadfd51ec7682f3a2c54608721674e99b75e3",
+      "layout_heron.mlmodelc/analytics/coremldata.bin": "785e2718cac904261acde10eb6d7a4b120bef8c3a997e913528992436d268e59",
+      "evaluation/run_doclayout.py": "012ff241fa2a946c1bdc45eff65cfa1635ae8962f9a523f6ae6eb713537224aa",
+      "evaluation/evaluate_ibem.py": "b1d3593fd746e996a3576b175194ffa0c90c50c0fda0bb810f9b211f9d1aaf69",
+      "evaluation/build_comparison.py": "af446d5fef6f7a03059010c91c7b90164cb962288d7a0fd6ebd2f66448bbcc91",
+      "evaluation/comparison.html": "2a2bef3b07d73ac95ff893b066dacd3eca91191c82bf9d0252bdd1c7475ff850",
+      "evaluation/README.md": "74b4547a45c741078ddd1754c197981909ce8835d432b5ce99ccea2cb78d2592",
+      "evaluation/viewer.html": "e88a58b6b1be904d0e7af7fb6d011bc94ee41e4cf76abdbf4c012ab6a3044599",
+      "evaluation/RunHeron.swift": "e91c900551f7fad8d36d74ca56adba11262bc09c938318ea084f901e51996cf5",
+      "evaluation/write_report.py": "d9c6a1f6c8fe930352747fa57dd65fdd3f27072797dc3ba6ee19ae14a078a61c"
+    },
+    "preprocessing": "Pillow RGB; bilinear stretch to 640x640; Float32 NCHW /255; no normalization or padding",
+    "postprocessing": "Sigmoid; top 300 query/class pairs per image; CXCYWH to normalized XYXY; no NMS; strict score > threshold",
+    "evaluation": "Formula predictions only, confidence-ordered one-to-one matches at IoU >= 0.5. Scope metrics use all formula predictions; predictions matching only excluded types are false positives. AP uses pycocotools, no score cutoff, maxDets=100, single category."
+  }
+}

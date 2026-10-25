@@ -1,0 +1,107 @@
+{
+  "model": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "revision": "e4f489dc536556fc1be02b973ba06756e0d4a2ac",
+  "device": "mps",
+  "dtype": "float32",
+  "transformers": "5.8.1",
+  "torch": "2.12.0",
+  "macos": "27.0.1",
+  "model_load_ms": 460.1810409949394,
+  "warmup_ms": [
+    1113.2235839904752,
+    88.65837499615736,
+    88.00324999901932
+  ],
+  "page_count": 50,
+  "annotations_sha256": "9008e0533d272adaba663e8407750fa86649b032d2fc78a6110107e0ed122e18",
+  "model_files_sha256": {
+    "model.safetensors": "5ea422c6cc5fe759a47e1357c35639b58173508e025a3131cbe4b6ac59e2b85e",
+    "config.json": "3cf834b91d23a756b1519bce4db42c09e852f3e35c35092dd5a3e253a50c071a",
+    "README.md": "77adba6b875c9019f90d79215e802f88c866ba937fc73100e8f410391e0b4e52",
+    "inference.yml": "506fcfac13b3b546ae40d7886b44126420f392adb694e3f8bb6a6286a1f90fdc",
+    "preprocessor_config.json": "519fe0187a43a1ca429e3ad8317bab8700f0d5e8fb3a6e3a0a413ffac078ba42"
+  },
+  "runner_sha256": "012ff241fa2a946c1bdc45eff65cfa1635ae8962f9a523f6ae6eb713537224aa",
+  "processor_config": {
+    "do_normalize": true,
+    "do_rescale": true,
+    "do_resize": true,
+    "image_mean": [
+      0,
+      0,
+      0
+    ],
+    "image_processor_type": "PPDocLayoutV3ImageProcessor",
+    "image_std": [
+      1,
+      1,
+      1
+    ],
+    "resample": 3,
+    "rescale_factor": 0.00392156862745098,
+    "size": {
+      "height": 800,
+      "width": 800
+    }
+  },
+  "id2label": {
+    "0": "abstract",
+    "1": "algorithm",
+    "2": "aside_text",
+    "3": "chart",
+    "4": "content",
+    "5": "formula",
+    "6": "doc_title",
+    "7": "figure_title",
+    "8": "footer",
+    "9": "footer",
+    "10": "footnote",
+    "11": "formula_number",
+    "12": "header",
+    "13": "header",
+    "14": "image",
+    "15": "formula",
+    "16": "number",
+    "17": "paragraph_title",
+    "18": "reference",
+    "19": "reference_content",
+    "20": "seal",
+    "21": "table",
+    "22": "text",
+    "23": "text",
+    "24": "vision_footnote"
+  },
+  "native_label_list": [
+    "abstract",
+    "algorithm",
+    "aside_text",
+    "chart",
+    "content",
+    "display_formula",
+    "doc_title",
+    "figure_title",
+    "footer",
+    "footer_image",
+    "footnote",
+    "formula_number",
+    "header",
+    "header_image",
+    "image",
+    "inline_formula",
+    "number",
+    "paragraph_title",
+    "reference",
+    "reference_content",
+    "seal",
+    "table",
+    "text",
+    "vertical_text",
+    "vision_footnote"
+  ],
+  "formula_class_ids": [
+    5,
+    15
+  ],
+  "postprocess": "Official HF processor threshold=0, top 300; no extra NMS. Class IDs labeled formula mapped to math; formula-number excluded. V3 evaluated by bounding boxes only; its mask/polygon predictions are not scored or displayed.",
+  "timing_boundary": "Synchronized torch model forward including auxiliary networks; 3 warmups then 3 calls/page. Excludes preprocessing, device input transfer, and postprocessing. Different backend/precision/input resolution from Core ML Heron; not a controlled hardware speed comparison."
+}

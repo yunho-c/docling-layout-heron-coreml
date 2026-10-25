@@ -1,0 +1,41 @@
+[
+  {
+    "model": "heron-cpu-ne",
+    "pages": 50,
+    "raw_postprocessing_parity": true,
+    "coco_tp_at_0_5": 44,
+    "custom_tp": 44
+  },
+  {
+    "model": "doclayout-v2",
+    "pages": 50,
+    "raw_postprocessing_parity": true,
+    "coco_tp_at_0_5": 571,
+    "custom_tp": 571
+  },
+  {
+    "model": "doclayout-plus-l",
+    "pages": 50,
+    "raw_postprocessing_parity": true,
+    "coco_tp_at_0_5": 549,
+    "custom_tp": 549
+  },
+  {
+    "model": "doclayout-v3",
+    "pages": 50,
+    "raw_postprocessing_parity": true,
+    "coco_tp_at_0_5": 485,
+    "custom_tp": 485
+  },
+  {
+    "heron_final_vs_initial_raw_outputs": "bit-identical on all 50 pages"
+  },
+  {
+    "browser": "All 50 pages and four model choices; original/math/error/annotations views; threshold/labels/annotation/zoom controls; search empty state; box details; keyboard; responsive mobile layout; reduced motion; PNG export decoded at 1447x2048.",
+    "status": "passed"
+  },
+  {
+    "browser_additional": "Synchronized and independent scrolling, image-load failure and recovery in both panels, displayed-page filter, recall-gap sorting.",
+    "status": "passed"
+  }
+]

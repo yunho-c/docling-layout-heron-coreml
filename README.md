@@ -114,6 +114,17 @@ not broad benchmark claims; performance varies by device and OS.
 The Core ML compute plan placed all 2,427 non-constant compute operations on the
 GPU with `ComputeUnit.ALL`. `CPU_AND_NE` was slower for this graph.
 
+## IBEM comparison experiment
+
+The experimental IBEM evaluation compares this Core ML model with
+PP-DocLayoutV2, PP-DocLayout_plus-L, and PP-DocLayoutV3 on 50 scientific pages.
+See the [comparison report](results/ibem50-20261025/REPORT.md),
+[interactive viewer](results/ibem50-20261025/index.html), and
+[evaluation instructions](evaluation/README.md). Saved results include raw
+outputs, model revisions, compute placement, and dataset provenance. The
+comparison uses different runtimes and input resolutions and is not a
+full-dataset benchmark.
+
 ## Reproduce the conversion
 
 The conversion requires macOS and Python 3.12:

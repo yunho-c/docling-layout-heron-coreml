@@ -1,0 +1,156 @@
+[
+  {
+    "reference": "results/ibem10-20261025-all",
+    "mode": "all",
+    "displayed_metrics": {
+      "tp": 16,
+      "fp": 15,
+      "fn": 17,
+      "precision": 0.5161290322580645,
+      "recall": 0.48484848484848486,
+      "f1": 0.5,
+      "matched_mean_iou": 0.6248464203438747
+    },
+    "page_matches": [
+      {
+        "page_id": "0001074_page02",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0001125_page03",
+        "primary_count": 6,
+        "reference_count": 6,
+        "matched": 6
+      },
+      {
+        "page_id": "0001133_page03",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0001178_page04",
+        "primary_count": 7,
+        "reference_count": 7,
+        "matched": 6
+      },
+      {
+        "page_id": "0002018_page04",
+        "primary_count": 3,
+        "reference_count": 3,
+        "matched": 3
+      },
+      {
+        "page_id": "0002177_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003055_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003079_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003126_page03",
+        "primary_count": 16,
+        "reference_count": 15,
+        "matched": 11
+      },
+      {
+        "page_id": "0003226_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      }
+    ],
+    "matched_formula_mean_iou": 0.7676066834609123,
+    "matched_formula_min_iou": 0.5118200835539691
+  },
+  {
+    "reference": "results/ibem10-20261025-cpu",
+    "mode": "cpu",
+    "displayed_metrics": {
+      "tp": 15,
+      "fp": 20,
+      "fn": 18,
+      "precision": 0.42857142857142855,
+      "recall": 0.45454545454545453,
+      "f1": 0.4411764705882353,
+      "matched_mean_iou": 0.6564692295142608
+    },
+    "page_matches": [
+      {
+        "page_id": "0001074_page02",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0001125_page03",
+        "primary_count": 6,
+        "reference_count": 6,
+        "matched": 6
+      },
+      {
+        "page_id": "0001133_page03",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0001178_page04",
+        "primary_count": 7,
+        "reference_count": 7,
+        "matched": 7
+      },
+      {
+        "page_id": "0002018_page04",
+        "primary_count": 3,
+        "reference_count": 7,
+        "matched": 3
+      },
+      {
+        "page_id": "0002177_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003055_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003079_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      },
+      {
+        "page_id": "0003126_page03",
+        "primary_count": 16,
+        "reference_count": 15,
+        "matched": 11
+      },
+      {
+        "page_id": "0003226_page01",
+        "primary_count": 0,
+        "reference_count": 0,
+        "matched": 0
+      }
+    ],
+    "matched_formula_mean_iou": 0.769098961918695,
+    "matched_formula_min_iou": 0.5014572598595619
+  }
+]

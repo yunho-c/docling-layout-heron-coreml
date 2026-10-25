@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local browser sessions and disposable UI verification captures.
+/.playwright-cli/
+/output/
+
+# The requested model was clarified to PP-DocLayout_plus-L.
+/results/ibem50-20261025/formulanet-pilot/

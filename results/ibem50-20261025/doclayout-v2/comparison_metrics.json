@@ -1,0 +1,260 @@
+{
+  "key": "doclayout-v2",
+  "name": "PP-DocLayoutV2",
+  "backend": "Transformers FP32 · MPS GPU · 800²",
+  "metrics": {
+    "tp": 571,
+    "fp": 129,
+    "fn": 240,
+    "precision": 0.8157142857142857,
+    "recall": 0.7040690505548706,
+    "f1": 0.7557908669755128,
+    "recall_by_type": {
+      "embedded": {
+        "matched": 475,
+        "total": 715,
+        "recall": 0.6643356643356644
+      },
+      "isolated": {
+        "matched": 96,
+        "total": 96,
+        "recall": 1.0
+      }
+    },
+    "matched_mean_iou": 0.7350708441260401
+  },
+  "threshold_sweep": {
+    "0.1": {
+      "tp": 651,
+      "fp": 629,
+      "fn": 160,
+      "precision": 0.50859375,
+      "recall": 0.8027127003699137,
+      "f1": 0.6226685796269726,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 555,
+          "total": 715,
+          "recall": 0.7762237762237763
+        },
+        "isolated": {
+          "matched": 96,
+          "total": 96,
+          "recall": 1.0
+        }
+      },
+      "matched_mean_iou": 0.7204001854479012
+    },
+    "0.3": {
+      "tp": 571,
+      "fp": 129,
+      "fn": 240,
+      "precision": 0.8157142857142857,
+      "recall": 0.7040690505548706,
+      "f1": 0.7557908669755128,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 475,
+          "total": 715,
+          "recall": 0.6643356643356644
+        },
+        "isolated": {
+          "matched": 96,
+          "total": 96,
+          "recall": 1.0
+        }
+      },
+      "matched_mean_iou": 0.7350708441260401
+    },
+    "0.5": {
+      "tp": 493,
+      "fp": 46,
+      "fn": 318,
+      "precision": 0.9146567717996289,
+      "recall": 0.6078914919852034,
+      "f1": 0.7303703703703703,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 399,
+          "total": 715,
+          "recall": 0.558041958041958
+        },
+        "isolated": {
+          "matched": 94,
+          "total": 96,
+          "recall": 0.9791666666666666
+        }
+      },
+      "matched_mean_iou": 0.7459471229321563
+    },
+    "0.7": {
+      "tp": 428,
+      "fp": 24,
+      "fn": 383,
+      "precision": 0.9469026548672567,
+      "recall": 0.5277435265104808,
+      "f1": 0.6777513855898653,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 336,
+          "total": 715,
+          "recall": 0.4699300699300699
+        },
+        "isolated": {
+          "matched": 92,
+          "total": 96,
+          "recall": 0.9583333333333334
+        }
+      },
+      "matched_mean_iou": 0.7565937907295691
+    },
+    "0.9": {
+      "tp": 231,
+      "fp": 13,
+      "fn": 580,
+      "precision": 0.9467213114754098,
+      "recall": 0.2848335388409371,
+      "f1": 0.43791469194312793,
+      "recall_by_type": {
+        "embedded": {
+          "matched": 140,
+          "total": 715,
+          "recall": 0.1958041958041958
+        },
+        "isolated": {
+          "matched": 91,
+          "total": 96,
+          "recall": 0.9479166666666666
+        }
+      },
+      "matched_mean_iou": 0.8095630615624888
+    }
+  },
+  "coco_all_math": {
+    "ap_50_95": 0.34711719837753735,
+    "ap50": 0.7415926442169622,
+    "ap75": 0.21022432069617394,
+    "ar_100": 0.4018495684340321,
+    "max_detections_per_page": 100
+  },
+  "coverage80": {
+    "embedded": {
+      "covered": 549,
+      "total": 715,
+      "fraction": 0.7678321678321678
+    },
+    "isolated": {
+      "covered": 96,
+      "total": 96,
+      "fraction": 1.0
+    }
+  },
+  "diagnostic_median_forward_ms": 78.86124999640742,
+  "provenance": {
+    "model": "PaddlePaddle/PP-DocLayoutV2_safetensors",
+    "revision": "880e8971b88938518611c54fc0f59ad57849c9d4",
+    "device": "mps",
+    "dtype": "float32",
+    "transformers": "5.8.1",
+    "torch": "2.12.0",
+    "macos": "27.0.1",
+    "model_load_ms": 789.7239589947276,
+    "warmup_ms": [
+      7068.471749997116,
+      84.26925000094343,
+      78.833499996108
+    ],
+    "page_count": 50,
+    "annotations_sha256": "9008e0533d272adaba663e8407750fa86649b032d2fc78a6110107e0ed122e18",
+    "model_files_sha256": {
+      "model.safetensors": "e60f3725aeedc88fd319416ef166bda79171a41516a301c27cab9132dc2739d2",
+      "config.json": "18a696b54c64c4fa582afcd3a41407c4b65a99dc7ab187ad2fed8af8e4128ad8",
+      "README.md": "6213934bbe672e1f78a2135895133ecfa50c5a3058007e9698cacc408994fa67",
+      "inference.yml": "93100e0fb2cd76b9d246a853deea85e191d8333b2cfca7be76e82e4c4ebfa819",
+      "preprocessor_config.json": "56281a70c931a291dcaf653605fb4df713fd823f65e939aecd6005c26346a103"
+    },
+    "runner_sha256": "22e13f803946b0ac9011d9044c51a70a9bc0b256601bcee2d1f0b2576a54d17d",
+    "processor_config": {
+      "do_normalize": true,
+      "do_rescale": true,
+      "do_resize": true,
+      "image_mean": [
+        0,
+        0,
+        0
+      ],
+      "image_processor_type": "PPDocLayoutV2ImageProcessor",
+      "image_std": [
+        1,
+        1,
+        1
+      ],
+      "resample": 3,
+      "rescale_factor": 0.00392156862745098,
+      "size": {
+        "height": 800,
+        "width": 800
+      }
+    },
+    "id2label": {
+      "0": "abstract",
+      "1": "algorithm",
+      "2": "aside_text",
+      "3": "chart",
+      "4": "content",
+      "5": "formula",
+      "6": "doc_title",
+      "7": "figure_title",
+      "8": "footer",
+      "9": "footer",
+      "10": "footnote",
+      "11": "formula_number",
+      "12": "header",
+      "13": "header",
+      "14": "image",
+      "15": "formula",
+      "16": "number",
+      "17": "paragraph_title",
+      "18": "reference",
+      "19": "reference_content",
+      "20": "seal",
+      "21": "table",
+      "22": "text",
+      "23": "text",
+      "24": "vision_footnote"
+    },
+    "native_label_list": [
+      "abstract",
+      "algorithm",
+      "aside_text",
+      "chart",
+      "content",
+      "display_formula",
+      "doc_title",
+      "figure_title",
+      "footer",
+      "footer_image",
+      "footnote",
+      "formula_number",
+      "header",
+      "header_image",
+      "image",
+      "inline_formula",
+      "number",
+      "paragraph_title",
+      "reference",
+      "reference_content",
+      "seal",
+      "table",
+      "text",
+      "vertical_text",
+      "vision_footnote"
+    ],
+    "formula_class_ids": [
+      5,
+      15
+    ],
+    "postprocess": "Official HF processor threshold=0, top 300; no extra NMS. IDs 5 and 15 both map to formula; native subtypes retained. Formula-number ID 11 excluded.",
+    "timing_boundary": "Synchronized torch model forward including reading-order network; 3 warmups then 3 calls/page. Excludes preprocessing, device input transfer, and postprocessing. Different backend/precision/input resolution from Core ML Heron; not a controlled hardware speed comparison."
+  }
+}

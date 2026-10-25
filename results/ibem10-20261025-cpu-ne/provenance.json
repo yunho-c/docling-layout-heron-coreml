@@ -1,0 +1,85 @@
+{
+  "dataset": {
+    "dataset": "deepcopy/IBEM-v1-math-detection",
+    "dataset_url": "https://huggingface.co/datasets/deepcopy/IBEM-v1-math-detection",
+    "revision": "4f82284a793f020a9235efe26dbd6ed5d733a022",
+    "split": "test",
+    "source_shard": "data/test-00000-of-00002-012842bff90d1079.parquet",
+    "selection": "First page encountered from each of the first ten distinct documents in row group 0. Deterministic convenience sample, not a random sample.",
+    "count": 10,
+    "image_encoding": "Original embedded image bytes, copied without resizing or re-encoding.",
+    "annotations": "annotations.json; each record contains expressions as a list of objects, transposed from the source column lists. Bounding-box coordinates are normalized fractions of image dimensions.",
+    "license": "CC BY 4.0, according to the dataset card",
+    "original_dataset": "https://doi.org/10.5281/zenodo.7963703",
+    "source_card": "DATASET_CARD.md",
+    "downloaded_at_utc": "2026-10-25T22:50:27.397490+00:00",
+    "parquet_range_payload_bytes": 29622272,
+    "image_bytes": 2981166,
+    "images": [
+      {
+        "file": "0001074_page02.jpg",
+        "sha256": "01e0768b593731c22d5cbc726560ef2a223aa0026b3c0b4505d9471c9d183ccc"
+      },
+      {
+        "file": "0001125_page03.jpg",
+        "sha256": "2381ee8cd7924921ce4fed892a22bcd226e12b93eb84efd269978257e1f28a0c"
+      },
+      {
+        "file": "0001133_page03.jpg",
+        "sha256": "1ea667a10dd6af6a7d29ae1e8ca6c6f90ce5af761c0730d8f493cd56bb57bd43"
+      },
+      {
+        "file": "0001178_page04.jpg",
+        "sha256": "741c09de6351643d40779ae42408c8cfa98306b821c0a8123a29a981b3efb3ee"
+      },
+      {
+        "file": "0002018_page04.jpg",
+        "sha256": "a762abbc1a0a863a5812c33db3a4b7f70c9c407e5d7b9cf706fee93ba204839b"
+      },
+      {
+        "file": "0002177_page01.jpg",
+        "sha256": "dce4972dee7a39eb2ca0d8c4efd849d178084d2e21f552d5efe1455adc0fc2cf"
+      },
+      {
+        "file": "0003055_page01.jpg",
+        "sha256": "d5243d5e180052fcc787c6cb86bcf72f8e1f65dc33c4a5068059627d03a25e38"
+      },
+      {
+        "file": "0003079_page01.jpg",
+        "sha256": "a8e2157412e7564d8a2f405bad4b258a2ef039c7d93b6020022e16e181c25608"
+      },
+      {
+        "file": "0003126_page03.jpg",
+        "sha256": "cd4514aec56e24513f5343193e5516dbcb12c646e6477cef088d7d17eb288735"
+      },
+      {
+        "file": "0003226_page01.jpg",
+        "sha256": "b3d3e1f05bf7dac2876e6b9fcbfe1c44dee6e0f61dfaddca82eac1d72861c4c5"
+      }
+    ]
+  },
+  "dataset_directory": "/Users/yunhocho/GitHub/IBEM-v1-math-detection-sample-10",
+  "annotations_sha256": "4d40e270cbfd6a57e605f8c9833498fcb7c403e81b3ac2d15124b31b216fdf47",
+  "git_head": "3d4f06aa152a72b05f8d47f4d29e2906eb47aa80",
+  "python": "3.13.16 (main, Sep 30 2026, 18:57:20) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "numpy": "2.3.5",
+  "pillow": "10.4.0",
+  "macos": "27.0.1",
+  "chip": "Apple M4 Pro",
+  "power": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=23003235)\t71%; charging; 5:34 remaining present: true",
+  "files_sha256": {
+    "layout_heron.mlmodelc/metadata.json": "146f86c84f1694ca5a42e439ddc0d110509c7094f9960f1f7eb6b713a73cfaa4",
+    "layout_heron.mlmodelc/model.mil": "b8db7773c6859798734fe9d420a7c3af86d7aca5308c2f59a09689419d2f2d2b",
+    "layout_heron.mlmodelc/coremldata.bin": "a2d9414ac6582e4711465eb1ab6c58dc10b3d0d62586a729f6601f97457973f4",
+    "layout_heron.mlmodelc/weights/weight.bin": "37dccfd721a45363bb10c208593dadfd51ec7682f3a2c54608721674e99b75e3",
+    "layout_heron.mlmodelc/analytics/coremldata.bin": "785e2718cac904261acde10eb6d7a4b120bef8c3a997e913528992436d268e59",
+    "evaluation/evaluate_ibem.py": "b1d3593fd746e996a3576b175194ffa0c90c50c0fda0bb810f9b211f9d1aaf69",
+    "evaluation/README.md": "74b4547a45c741078ddd1754c197981909ce8835d432b5ce99ccea2cb78d2592",
+    "evaluation/viewer.html": "e88a58b6b1be904d0e7af7fb6d011bc94ee41e4cf76abdbf4c012ab6a3044599",
+    "evaluation/RunHeron.swift": "e91c900551f7fad8d36d74ca56adba11262bc09c938318ea084f901e51996cf5",
+    "evaluation/write_report.py": "d9c6a1f6c8fe930352747fa57dd65fdd3f27072797dc3ba6ee19ae14a078a61c"
+  },
+  "preprocessing": "Pillow RGB; bilinear stretch to 640x640; Float32 NCHW /255; no normalization or padding",
+  "postprocessing": "Sigmoid; top 300 query/class pairs per image; CXCYWH to normalized XYXY; no NMS; strict score > threshold",
+  "evaluation": "Formula predictions only, confidence-ordered one-to-one matches at IoU >= 0.5. Scope metrics use all formula predictions; predictions matching only excluded types are false positives. AP uses pycocotools, no score cutoff, maxDets=100, single category."
+}
