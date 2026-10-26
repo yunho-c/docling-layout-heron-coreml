@@ -94,6 +94,15 @@ annotation toggles, matched/missed overlays, page filtering, box inspection, and
 PNG export. The fixed summary table stays at score >0.30, IoU >=0.50. COCO AP is
 computed without a score cutoff. V3 polygons and reading order are not evaluated.
 
+**Hide common detections** filters out formula predictions that both selected
+models match to the same IBEM annotation at IoU >=0.50, plus the corresponding
+annotation boxes. Matching uses the current confidence threshold and updates when
+the page or either model changes. One-sided matches, unmatched predictions
+(including shared false positives), and annotations missed by both models remain
+visible under the selected overlay and annotation controls. Non-math layout
+regions are unaffected. The filter applies to PNG exports; page statistics and
+the summary table continue to include all detections.
+
 `run_doclayout.py` saves native class IDs and subtypes; both IDs 5 and 15 of V2/V3
 map to math. Its V3 postprocessor runs at zero score threshold to retain candidates
 for AP; only returned **boxes and scores** are used, not the polygons whose mask

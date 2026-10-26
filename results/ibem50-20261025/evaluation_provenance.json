@@ -241,11 +241,11 @@
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/run_doclayout.py": "012ff241fa2a946c1bdc45eff65cfa1635ae8962f9a523f6ae6eb713537224aa",
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/evaluate_ibem.py": "b1d3593fd746e996a3576b175194ffa0c90c50c0fda0bb810f9b211f9d1aaf69",
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/build_comparison.py": "af446d5fef6f7a03059010c91c7b90164cb962288d7a0fd6ebd2f66448bbcc91",
-    "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/comparison.html": "43c72ed7d2e3d52e787488b8669ab5a1be62f272a24ed95f10b631ac1802de2b",
+    "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/comparison.html": "63a784338e8272110708beb8635d5826f4ce9327f8a2bde93a8456bf75f4ac8c",
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/viewer.html": "e88a58b6b1be904d0e7af7fb6d011bc94ee41e4cf76abdbf4c012ab6a3044599",
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/RunHeron.swift": "e91c900551f7fad8d36d74ca56adba11262bc09c938318ea084f901e51996cf5",
     "/Users/yunhocho/GitHub/docling-layout-heron-coreml/evaluation/write_report.py": "d9c6a1f6c8fe930352747fa57dd65fdd3f27072797dc3ba6ee19ae14a078a61c",
-    "evaluation/comparison.html": "fd4ce5a1f95eb51061f1b41d0f0d8eed57a8a95afd2dcae7c3cc208ee33ed303"
+    "evaluation/comparison.html": "63a784338e8272110708beb8635d5826f4ce9327f8a2bde93a8456bf75f4ac8c"
   },
   "model_metric_files": {
     "heron-cpu-ne": "3256c23847e17edda99fcfb825e83cb29960808d13039a194fdc99d52c8a74d5",
@@ -253,6 +253,6 @@
     "doclayout-plus-l": "d9204b8da1b22825cc25de3d0ddc9bdab003426200a26c1edeb561077885b1d9",
     "doclayout-v3": "a0270fbf5d3bc98aa0246c9f3e06fee94c763c0596f3859528824f72b53605ad"
   },
-  "viewer_updated_at": "2026-10-25T23:40:33.141813+00:00",
-  "viewer_change": "Native inline_formula predictions use purple; other formula predictions remain orange; error-view status colors retained."
+  "viewer_updated_at": "2026-10-26T00:00:18.344676+00:00",
+  "viewer_change": "Added Hide common detections using shared IBEM annotation matches at the current confidence threshold and IoU >=0.50. Paired predictions and annotation boxes are hidden; unmatched predictions and one-sided matches remain. Statistics and recorded model results are unchanged; inline formula colors are preserved."
 }

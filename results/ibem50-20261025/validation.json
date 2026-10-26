@@ -37,5 +37,10 @@
   {
     "browser_additional": "Synchronized and independent scrolling, image-load failure and recovery in both panels, displayed-page filter, recall-gap sorting.",
     "status": "passed"
+  },
+  {
+    "browser_hide_common_detections": "Compared rendered prediction and annotation boxes against saved independent evaluation matches for all six model pairs on all 50 pages (300 cases). Verified unchanged page metrics and summary, confidence changes to 0.65 and 0.95, same-model unmatched predictions, all five overlay modes, annotation toggles, toggle-off restoration, keyboard operation, inline formula color, mobile layout, and filtered PNG export decoded at 1447x2048.",
+    "checked_at_utc": "2026-10-26T00:00:18.344676+00:00",
+    "status": "passed"
   }
 ]
