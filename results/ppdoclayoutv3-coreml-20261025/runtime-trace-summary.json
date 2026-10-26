@@ -1,0 +1,15 @@
+{
+  "template": "Core AI",
+  "target": "trace_doclayoutv3.py, CPU_AND_NE, optimized-mixed.mlpackage",
+  "prediction_calls": 100,
+  "target_exit_status": 0,
+  "model_named_ane_prediction_intervals": 1009,
+  "ane_interval_union_ms": 3223.453499,
+  "ane_interval_sum_ms": 3223.453499,
+  "labels": {
+    "Neural Engine Compile (QoS=User-interactive)": 1,
+    "optimized-mixed_main__Op0_AneInference Load: cached": 1,
+    "optimized-mixed_main__Op0_AneInference Prediction": 1009
+  },
+  "note": "Actual model-named ANE runtime intervals. Includes cold/warm calls and profiling overhead; neither device utilization nor untraced end-to-end latency."
+}

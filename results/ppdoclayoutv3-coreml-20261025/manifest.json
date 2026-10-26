@@ -1,0 +1,52 @@
+{
+  "hardware": "Apple M4 Pro, 48 GiB",
+  "power": "AC power throughout recorded checks",
+  "macos": "27.0.1",
+  "xcode": "Xcode 27.1\nBuild version 27A9275",
+  "checkpoint_files": {
+    "model.safetensors": "5ea422c6cc5fe759a47e1357c35639b58173508e025a3131cbe4b6ac59e2b85e",
+    "config.json": "3cf834b91d23a756b1519bce4db42c09e852f3e35c35092dd5a3e253a50c071a",
+    "README.md": "77adba6b875c9019f90d79215e802f88c866ba937fc73100e8f410391e0b4e52",
+    "inference.yml": "506fcfac13b3b546ae40d7886b44126420f392adb694e3f8bb6a6286a1f90fdc",
+    "preprocessor_config.json": "519fe0187a43a1ca429e3ad8317bab8700f0d5e8fb3a6e3a0a413ffac078ba42"
+  },
+  "source_files": {
+    "conversion/measure_doclayoutv3.py": "47a62fe977be7956e1eda562d90ba0b76e3779f66bf141ec67d9ad2db36734a1",
+    "conversion/probe_doclayoutv3.py": "b0a5697c15973e612f378dbc9e8909f8658a918c74a587f2b5f2b2314b368a79",
+    "conversion/trace_doclayoutv3.py": "bc048af9cc31e8c13198120fad8646dd538e1d55f150adb832a65e7df1b2f7d8",
+    "conversion/validate_doclayoutv3.py": "be99f6c2b33abca374d21171314135c0e1a12a2a33b4baccfd3fe91871b2c441"
+  },
+  "transformers_source_sha256": "f05343b8fdacf8f25af6d1774dbad88bad3f12c0f5dfc0708670958430b0477a",
+  "artifacts": {
+    "optimized-mixed.mlpackage": {
+      "path": "/Users/yunhocho/GitHub/docling-layout-heron-coreml/output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+      "bytes": 66892976,
+      "files": {
+        "Data/com.apple.CoreML/model.mlmodel": "533d82680ab431ba5739fc8001d8c92db490a08df597162246aa950a2405576c",
+        "Data/com.apple.CoreML/weights/weight.bin": "55b7bbd7ec0b1478cdb92a8c77cd11f2c69ec64ef667ded8dc8cec9774cd255a",
+        "Manifest.json": "26690c6c5b8c2bbc23f9df118c42b2cb44e61a7183ea46c80eaad2bdb3618665"
+      }
+    },
+    "optimized-mixed.mlmodelc": {
+      "path": "/Users/yunhocho/GitHub/docling-layout-heron-coreml/output/ppdoclayoutv3-prototype/optimized-mixed.mlmodelc",
+      "bytes": 67415398,
+      "files": {
+        "analytics/coremldata.bin": "07976d395240a5519d145ceb9293919c9e5dda9e9830262d3c64994bfdf66dcd",
+        "coremldata.bin": "55e7a3b77735360d813a271b52a727dc3e3ef8c4fb9086da0039b92d18939159",
+        "metadata.json": "0bc6e0fc06f5247757f63d5a788eb7eca27bddad8df2df6ee0c959c0bea304f9",
+        "model.mil": "f25e4e771e10e5afeb6a8e0f01fce2394aa10b1fbe348ed2b7c3bd8d9705300f",
+        "weights/weight.bin": "55b7bbd7ec0b1478cdb92a8c77cd11f2c69ec64ef667ded8dc8cec9774cd255a"
+      }
+    }
+  },
+  "retained_large_evidence": "/Users/yunhocho/GitHub/docling-layout-heron-coreml/output/ppdoclayoutv3-prototype",
+  "note": "No global packages changed. coremltools 9.0, cattrs, pyaml and attrs installed locally under output. No publishing or commits.",
+  "environment_packages": {
+    "torch": "2.12.0",
+    "transformers": "5.8.1",
+    "numpy": "2.3.5",
+    "scipy": "1.16.1",
+    "Pillow": "10.4.0",
+    "huggingface-hub": "1.16.1"
+  }
+}

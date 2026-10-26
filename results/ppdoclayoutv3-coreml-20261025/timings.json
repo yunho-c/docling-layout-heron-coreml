@@ -1,0 +1,177 @@
+{
+  "optimized-cpu-ne": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "cpu-ne",
+    "load_ms": 3827.0385000068927,
+    "plan": {
+      "counts": {
+        "NeuralEngine": 778,
+        "CPU": 134
+      },
+      "estimated_cost_weights": {
+        "NeuralEngine": 0.7975084758272967,
+        "CPU": 0.2024915241726992
+      }
+    },
+    "warmup_ms": [
+      81.77866600453854,
+      50.7477080100216,
+      49.7092919977149
+    ],
+    "predict_ms": [
+      49.68279199965764,
+      46.937457998865284,
+      50.98975000146311,
+      51.632707996759564,
+      46.79958400083706,
+      48.792374989716336,
+      50.55633300798945,
+      51.30637499678414,
+      49.341042002197355,
+      46.65454199130181
+    ],
+    "median_ms": 49.5119170009275,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  },
+  "optimized-all": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "all",
+    "load_ms": 2287.3618340090616,
+    "plan": {
+      "counts": {
+        "NeuralEngine": 297,
+        "GPU": 615
+      },
+      "estimated_cost_weights": {
+        "NeuralEngine": 0.6814198175938757,
+        "GPU": 0.31858018240612457
+      }
+    },
+    "warmup_ms": [
+      1400.5187500006286,
+      43.25204199994914,
+      29.499041993403807
+    ],
+    "predict_ms": [
+      29.430708003928885,
+      29.19987500354182,
+      28.707500008749776,
+      28.32637500250712,
+      28.416208006092347,
+      28.589042005478404,
+      28.650499996729195,
+      28.46570899419021,
+      28.80041699972935,
+      28.43070900416933
+    ],
+    "median_ms": 28.6197710011038,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  },
+  "optimized-cpu": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "cpu",
+    "load_ms": 492.78329200751614,
+    "plan": {
+      "counts": {
+        "CPU": 912
+      },
+      "estimated_cost_weights": {
+        "CPU": 0.9999999999999962
+      }
+    },
+    "warmup_ms": [
+      119.29025000426918,
+      89.26629100460559,
+      87.23875001305714
+    ],
+    "predict_ms": [
+      86.0669579997193,
+      87.24974999495316,
+      84.93179200740997,
+      99.80745799839497,
+      85.8508340024855,
+      88.88958299939986,
+      89.55591599806212,
+      84.92958299757447,
+      83.58691701141652,
+      83.85737499338575
+    ],
+    "median_ms": 85.9588960011024,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  },
+  "optimized-cpu-ne-repeat": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "cpu-ne",
+    "load_ms": 3883.924624999054,
+    "plan": null,
+    "warmup_ms": [
+      86.01254200038966,
+      55.434791996958666,
+      54.11937499593478
+    ],
+    "predict_ms": [
+      53.11233400425408,
+      52.333582993014716,
+      47.537250007735565,
+      47.362541998154484,
+      46.37541600095574,
+      47.0981669932371,
+      47.21225000685081,
+      46.46245799085591,
+      46.48020799504593,
+      46.33883299538866
+    ],
+    "median_ms": 47.155208500043955,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  },
+  "optimized-all-repeat": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "all",
+    "load_ms": 2308.215333003318,
+    "plan": null,
+    "warmup_ms": [
+      217.84279200073797,
+      40.09125000447966,
+      37.157833998207934
+    ],
+    "predict_ms": [
+      32.5281669938704,
+      29.490499990060925,
+      29.152707997127436,
+      28.86887500062585,
+      28.74020799936261,
+      33.00183299870696,
+      28.39700000185985,
+      28.310541005339473,
+      28.4667499945499,
+      29.906874988228083
+    ],
+    "median_ms": 29.010791498876642,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  },
+  "optimized-cpu-ne-repeat2": {
+    "model": "output/ppdoclayoutv3-prototype/optimized-mixed.mlpackage",
+    "units": "cpu-ne",
+    "load_ms": 3669.6704579953803,
+    "plan": null,
+    "warmup_ms": [
+      74.7080840083072,
+      53.617417011992075,
+      53.3145829977002
+    ],
+    "predict_ms": [
+      52.615708991652355,
+      46.3165409892099,
+      46.28316700109281,
+      51.54454099829309,
+      49.66654200688936,
+      46.761499994318,
+      46.825999990687706,
+      46.294416999444366,
+      46.49683300522156,
+      47.38162500143517
+    ],
+    "median_ms": 46.79374999250285,
+    "boundary": "Python MLModel.predict including output materialization; excludes load, preprocessing and postprocessing."
+  }
+}

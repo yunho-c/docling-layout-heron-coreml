@@ -1,0 +1,42 @@
+{
+  "outputs": {
+    "pred_boxes": {
+      "shape": [
+        1,
+        300,
+        4
+      ],
+      "finite": true,
+      "max_abs_vs_package": 0.0
+    },
+    "out_masks": {
+      "shape": [
+        1,
+        300,
+        200,
+        200
+      ],
+      "finite": true,
+      "max_abs_vs_package": 0.0
+    },
+    "order_logits": {
+      "shape": [
+        1,
+        300,
+        300
+      ],
+      "finite": true,
+      "max_abs_vs_package": 0.0
+    },
+    "logits": {
+      "shape": [
+        1,
+        300,
+        25
+      ],
+      "finite": true,
+      "max_abs_vs_package": 0.0
+    }
+  },
+  "load_and_first_prediction_ms": 3730.657916996279
+}

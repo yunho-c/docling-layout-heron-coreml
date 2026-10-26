@@ -1,0 +1,14 @@
+{
+  "cases": [
+    "empty",
+    "full",
+    "top-left",
+    "bottom-right",
+    "top-right",
+    "bottom-left",
+    "random-1",
+    "random-2"
+  ],
+  "max_abs": 0.0,
+  "exact_equal": true
+}
